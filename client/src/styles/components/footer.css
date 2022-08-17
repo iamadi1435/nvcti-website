@@ -1,0 +1,109 @@
+.footer {
+  margin-bottom: -30px;
+  width: 100%;
+  background-color: #f2f2f2 !important;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px 5px 20px;
+}
+
+.footer .left {
+  width: 40%;
+  margin: 0px 60px 30px;
+}
+
+.footer .right {
+  width: 50%;
+  margin-left: 60px;
+  margin-top: 0;
+  justify-content: start;
+}
+
+.footer .left h2,
+.footer .right h3 {
+  font-weight: bold;
+}
+
+.footer .connect-text {
+  margin: 10px 0 5px 0 !important;
+}
+
+.footer .social-links span a svg{
+  display: block !important;
+  color: black;
+  font-size: 180%;
+  transition: all 0.3s ease 50ms;
+}
+
+.footer .social-links span .facebook:hover,
+.footer .social-links span .facebook:focus {
+  color: #4267b2;
+  transition: all 0.2s ease 50ms;
+}
+
+.footer .social-links span .instagram:hover,
+.footer .social-links span .instagram:focus {
+  color: #cc2366;
+  transition: all 0.2s ease 50ms;
+}
+
+.footer .social-links span .linkedin:hover,
+.footer .social-links span .linkedin:focus {
+  color: #0e76a8;
+  transition: all 0.2s ease 50ms;
+}
+
+.footer .social-links span .youtube:hover,
+.footer .social-links span .youtube:focus {
+  color: rgb(255, 0, 0);
+  transition: all 0.2s ease 50ms;
+}
+
+.footer .social-links span .twitter:hover,
+.footer .social-links span .twitter:focus {
+  color: 	#1DA1F2;
+  transition: all 0.2s ease 50ms;
+}
+
+.footer h2 {
+  margin: 10px 0px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.footer .lead {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer .bottom-div {
+  text-align: center;
+}
+
+.footer .bottom-div .first-text {
+  font-weight: bold;
+}
+
+.footer .bottom-div .second-text {
+  font-size: 14px;
+}
+
+.footer .footer_logo {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .footer_logo {
+    display: block;
+    width: 10%;
+    background-image: url("../../assets/logo/IIT_ISM_redefined-removebg-preview.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .footer .right {
+    width: 35%;
+  }
+}

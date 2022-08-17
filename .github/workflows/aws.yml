@@ -1,0 +1,83 @@
+name: Deploy to EC2 Instance
+
+on:
+  push:
+    branches:
+      - deploy
+  pull_request:
+    types: [closed]
+    branches: [deploy]
+
+jobs:
+  build-client-image-push:
+    name: Build app image and push to dockerhub
+    if: ${{ github.event.pull_request.merged == true || github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get new code
+        uses: actions/checkout@v2.3.2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12'
+      - name: Build client
+        run: |
+          cd client
+          npm install
+          npm run build
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Login to DockerHub
+        uses: docker/login-action@v1 
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+      - name: Push to Docker Hub
+        id: docker_run
+        uses: docker/build-push-action@v2.2.2
+        with:
+          push: true
+          tags: nvcti/website:latest
+          context: .
+          file: ./ci/Dockerfile
+      - name: Image digest
+        run: echo ${{ steps.docker_run.outputs.digest }}
+
+  copy-compose:
+    name: Copy docker-compose.yml to instance
+    if: ${{ github.event.pull_request.merged == true || github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: copy compose via ssh
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.EC2_PORT }}
+          source: "ci/docker-compose.yml"
+          target: "app"
+
+  pull-rm-up:
+    name: Pull image from dockerhub and start it
+    needs: build-client-image-push
+    if: ${{ github.event.pull_request.merged == true || github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: stopping and starting docker containers on ec2 via ssh
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USERNAME }}
+        key: ${{ secrets.EC2_SSH_KEY }}
+        port: ${{ secrets.EC2_PORT }}
+        script: |
+          docker image prune -f 
+          cd app 
+          cd ci && docker-compose down
+          docker rmi nvcti/website:latest
+          docker-compose up -d
+      

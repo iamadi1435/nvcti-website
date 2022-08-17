@@ -1,0 +1,24 @@
+.sponsor{
+    background: #f2f2f2 !important;
+    padding:100px 0;
+    color:black
+}
+
+.sponsor .header{
+    text-transform: none ;
+    font-weight: bold;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.sponsor .container .first-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sponsor .container .second-row{
+    display: flex;
+    justify-content: space-evenly;
+}

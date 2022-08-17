@@ -1,0 +1,37 @@
+input:focus,textarea:focus{
+    outline: none;
+}
+
+.group input{
+    font-size: 12px;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.contact-form textarea{
+    border-color: rgba(0,0,0,.1);
+    border-width: 1px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #777;
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    outline: 0;
+    background-color: #fff;
+    background-image: none;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s;
+    -ms-transition: border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s;
+    -webkit-transition: border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s;
+    -moz-transition: border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s;
+    -o-transition: border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s;
+    width: 100%;
+}

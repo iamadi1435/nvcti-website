@@ -1,0 +1,19 @@
+# Always ignore .git
+.git
+.cache
+
+# Always ignore data
+data
+
+# Always ignore nano saves
+**/*.save
+
+# Always ignore editor files
+.vscode
+
+# Take only client build
+client
+!client/build
+
+# Always ignore node_modules
+node_modules

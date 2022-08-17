@@ -1,0 +1,78 @@
+.outer-div{
+    padding: 8% 29%!important;
+    color: #212121;
+}
+
+.outer-div .section-title .header{
+    font-size: 34px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.outer-div .section-title .fw400{
+    color:#616161!important;
+}
+
+.outer-div .hs1{
+    margin-bottom: 0;
+}
+
+.outer-div.dark{
+    background-color: #212121!important;
+    color:white !important;
+}
+
+.outer-div.dark .section-title .fw500{
+    color:#fff !important;
+}
+
+.outer-div.dark .contact-form .form-tip{
+    color: #888;
+    font-size: 13px;
+}
+
+.outer-div.dark .contact-form .custom-button{
+    padding: 12px 40px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: 3px solid #fff;
+    background: #fff;
+    color: #212121!important;
+    font-weight: 500;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color .3s ease 0s,background .3s ease 0s;
+    -ms-transition: color .3s ease 0s,background .3s ease 0s;
+    -webkit-transition: color .3s ease 0s,background .3s ease 0s;
+    /* -moz--webkit-transition: color .3s ease 0s,background .3s ease 0s;
+    -o--webkit-transition: color .3s ease 0s,background .3s ease 0s; */
+}
+
+.outer-div.dark .contact-form .custom-button:hover,.outer-div.dark .contact-form .custom-button:focus{
+    color:#fff !important;
+    background: #212121 !important;
+    transition: color .3s ease 0s,background .3s ease 0s;
+    -ms-transition: color .3s ease 0s,background .3s ease 0s;
+    -webkit-transition: color .3s ease 0s,background .3s ease 0s;
+    /* -moz--webkit-transition: color .3s ease 0s,background .3s ease 0s;
+    -o--webkit-transition: color .3s ease 0s,background .3s ease 0s; */
+}
+
+.outer-div .text-about .ab-icon{
+    display: flex;
+    align-items: center;
+}
+
+.outer-div .text-about .ab-icon .about-icon{
+    margin-right:15px;
+    width: 1rem !important;
+}
+
+.outer-div .text-about .ab-icon h4{
+    margin-bottom: 0 !important;
+}

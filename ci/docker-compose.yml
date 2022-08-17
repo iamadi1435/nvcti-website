@@ -1,0 +1,61 @@
+version: "3.3"
+services:
+  mysql:
+    image: mysql:8
+    container_name: "mysql"
+    restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - 3306:3306
+      - 33060:33060
+    expose:
+      - 3306
+      - 33060
+    network_mode: bridge
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: DB_NVCTI
+      MYSQL_USER: nvcti
+      MYSQL_PASSWORD: password
+    volumes:
+      - ../data:/var/lib/mysql
+
+  website:
+    image: nvcti/website:latest
+    container_name: "website"
+    command:
+      - '/bin/sh'
+      - '-c'
+      - '/bin/sleep 5 && npm start'
+    depends_on:
+      - mysql
+    network_mode: bridge
+    ports:
+      - 8080:8080 # For dev
+      # - 80:8080 # For production
+    links:
+      - mysql
+    restart: unless-stopped
+    expose:
+      - 8080
+    environment:
+      # Database
+      DB_PORT: 3306
+      DB_USERNAME: nvcti
+      DB_PASSWORD: password
+      DB_NAME: DB_NVCTI
+
+      # Contact us
+      CONTACT_MAIL: j.mihir19.mj@gmail.com
+
+      # Host (Use whatever port we are exposing)
+      API_URL: http://127.0.0.1:8080/api/v1
+      HOST_URL: http://127.0.0.1:8080
+
+      # Admin credentials
+      ADMIN_EMAIL: nvcti@iitism.ac.in
+      ADMIN_PASSWORD: password
+    volumes:
+      - "../uploads:/nvcti/uploads"   # For production only
+      # - "../src:/nvcti/src"             # For dev environments only
+      # - "../client:/nvcti/client"       # For dev environments only

@@ -1,0 +1,39 @@
+.text-slider{
+    margin-top: 50px;
+}
+
+.text-slider::before{
+    display: block;
+    padding-left: 0;
+    content: "‟";
+    font-size: 80px;
+    position: absolute;
+    left: 55px;
+    top: 10px;
+    color: #000000;
+}
+
+.text-slider .carousel-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-slider .carousel-item .text{
+    font-size: 22px;
+}
+
+.text-slider .carousel-item .designation{
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.text-slider .carousel-item .name{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:#555
+}

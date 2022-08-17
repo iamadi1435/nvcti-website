@@ -1,0 +1,109 @@
+.admin-nav{
+  background-color: #2962ff;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03), 0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03), 0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05), 0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
+}
+
+.admin-main{
+  width:100%;
+  height: fit-content;
+  background: #eef5f9;
+  position: relative;
+  transition: .2s ease-in;
+  padding: 30px 30px 0;
+  -ms-flex: 1;
+  flex: 1;
+  margin-top: 80px;
+}
+
+.admin-feed .card-header{
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.admin-feed .card-title{
+  height: 3.5rem;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.5rem;
+}
+
+.profile-table.admin .card-header{
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(26, 54, 126, 0.125) !important;
+}
+
+.table-hover tbody tr:hover {
+  color: #212529;
+  background-color: #f2f2f2 !important;
+}
+
+.profile-table.admin .card-title{
+  border-bottom: unset !important;
+}
+
+.profile-table.admin .card-title::before,.admin-feed .card-title::before{
+  content: "";
+  background-color: #04a9f5;
+  position: absolute;
+  left: 0px;
+  top: 17px;
+  width: 4px;
+  height: 20px;
+}
+
+.feed-item{
+  padding: 12px 0;
+}
+
+.feed-item .feed-icon{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #fff;
+}
+
+.feed-item .feed-icon.Accepted{
+  background-color:#3ac47d !important;
+  transition:all .3s ease 0s;
+}
+
+.feed-item .feed-icon.Accepted:hover{
+  background-color: #77d8a6 !important;
+  transition: background-color .3s ease 0s;
+  -ms-transition: background-color .3s ease 0s;
+}
+
+.feed-item .feed-icon.Rejected{
+  background-color:rgb(243, 43, 43) !important;
+  transition:all .3s ease 0s;
+}
+
+.feed-item .feed-icon.Rejected:hover{
+  background-color: rgb(251, 88, 88) !important;
+  transition: background-color .3s ease 0s;
+  -ms-transition: background-color .3s ease 0s;
+}
+
+.feed-item .feed-icon.Pending{
+  background-color:#f7b924 !important;
+  transition:all .3s ease 0s;
+}
+
+.feed-item .feed-icon.Pending:hover{
+  background-color: #f7c552 !important;
+  transition: background-color .3s ease 0s;
+  -ms-transition: background-color .3s ease 0s;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: 'Arial';
+      }
+      html,
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        width: 650px;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .heading_1 {
+        font-size: 21px;
+        color: red;
+        font-weight: bold;
+      }
+      .heading_2 {
+        font-size: 21px;
+        font-weight: bold;
+        margin-top: 1px;
+      }
+      .heading_3 {
+        font-size: 20px;
+        color: #0000ff;
+        font-weight: bold;
+        margin-top: 18px;
+      }
+      .application_heading {
+        font-weight: bold;
+        font-size: 21px;
+        margin-top: 6px;
+        text-decoration: underline;
+      }
+      .para_1 {
+        margin-top: 17px;
+        text-align: center;
+        font-style: italic;
+      }
+      .para_2 {
+        margin-top: 9px;
+        font: italic 15px 'Arial';
+      }
+      .para_2_heading {
+        font: italic bold 15px 'Arial';
+      }
+      .application_categories {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 4px;
+      }
+      .application_category {
+        text-align: center;
+        width: 162.5px;
+      }
+      .nvtil_facilities {
+        width: 130px;
+      }
+      .form_details {
+        display: grid;
+        width: 100%;
+        margin-top: 20px;
+        grid-template-columns: 200px auto 200px;
+        grid-gap: 7px 7px;
+      }
+      .label {
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .value {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .image-photo {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 5;
+      }
+      .project_title,
+      .project_description {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      .bottom_part {
+        margin-top: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+      }
+      .signature_label {
+        justify-content: center;
+      }
+      .signature_image {
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading_1">
+        Naresh Vashisht Centre for Tinkering and Innovation
+      </div>
+      <div class="heading_2">Indian Institute of Technology (ISM) Dhanbad</div>
+      <div class="heading_3">
+        Naresh Vashisht Tinkering and Innovation (NVTI) Lab
+      </div>
+      <div class="application_heading">Application Form</div>
+      <div class="para_1">
+        Please submit your application by filling out the form below to the NVTI
+        Lab. All the fields must be filled in detail. Strikeout inapplicable
+        fields.
+      </div>
+      <div class="para_2">
+        <span class="para_2_heading">Application Category*</span>
+        <span class="para_2_sub_heading">(✓ tick the appropriate)</span>
+      </div>
+      <div class="application_categories">
+        <div class="application_category">
+          <%= application.applicationCategory === 'COMMERCIAL' ? "✅" : "☐" %>
+          I: Commercial
+        </div>
+        <div class="application_category">
+          <%= application.applicationCategory === 'R&D INSTITUTE' ? '✅' : '☐'
+          %> II: R&D Institute
+        </div>
+        <div class="application_category">
+          <%= application.applicationCategory === 'RESEARCH STUDENT' ? '✅' :
+          '☐' %> III: Research Student
+        </div>
+        <div class="application_category">
+          <%= application.applicationCategory === "INTERNAL UG/PG STUDENTS" ?
+          "✅" : "☐" %> IV: Internal UG/PG Students
+        </div>
+      </div>
+      <div class="para_2">
+        <span class="para_2_heading">NVTIL UNIT whose access is requested</span>
+        <span class="para_2_sub_heading">(✓ tick the appropriate)</span>
+      </div>
+      <div class="application_categories">
+        <div class="application_category">
+          <%= application.nvtilUnit === 'MECHANICAL AND RAPID PROTOTYPING UNIT'
+          ? '✅' : '☐' %> I: Mechanical and Rapid Prototyping Unit
+        </div>
+        <div class="application_category">
+          <%= application.nvtilUnit === 'ELECTRONICS CIRCUITS AND IOT UNIT' ?
+          '✅' : '☐' %> II: Electronics Circuits and IoT Unit
+        </div>
+        <div class="application_category">
+          <%= application.nvtilUnit === 'GAMING AND ANIMATION DESIGN UNIT' ?
+          '✅' : '☐' %> III: Gaming and Animation Design Unit
+        </div>
+        <div class="application_category">
+          <%= application.nvtilUnit === 'POUCH BATTERY CELL ASSEMBLY UNIT' ?
+          '✅' : '☐' %> IV: Pouch Battery Cell Assembly Unit
+        </div>
+        <div class="application_category">
+          <%= application.nvtilUnit === 'ROBOTICS AND AUTOMATION UNIT' ? '✅' :
+          '☐' %> V: Robotics and Automation Unit
+        </div>
+      </div>
+      <div class="form_details">
+        <div class="label">Name of the Applicant:</div>
+        <div class="value"><%= applicant.name %></div>
+        <div class="label"></div>
+        <div class="label">Admission No.(For Students):</div>
+        <div class="value">
+          <%= applicant.admissionNumber ? applicant.admissionNumber : 'NA' %>
+        </div>
+        <div class="value image-photo"></div>
+        <div class="label">Department/Institute:</div>
+        <div class="value">
+          <%= applicant.iitismId ? applicant.branch : applicant.instituteName%>
+        </div>
+        <div class="label">Gender</div>
+        <div class="value"><%= applicant.gender %></div>
+        <div class="label">Email:</div>
+        <div class="value"><%= applicant.email %></div>
+        <div class="label">Phone:</div>
+        <div class="label">Address:</div>
+        <div class="value">
+          <%= applicant.iitismId ? applicant.hostel : applicant.permanentAddress
+          %>
+        </div>
+        <div class="value"><%=applicant.contactNumber%></div>
+        <div class="label">Title of the Project/Job:</div>
+        <div class="value project_title"><%= application.titleOfProject%></div>
+        <div class="label">Objective of the project/Job:</div>
+        <div class="value project_description">
+          <%= application.objectiveOfProject %>
+        </div>
+        <div class="label">Name of Mentor:</div>
+        <div class="value"><%= application.nameOfMentor %></div>
+        <div class="label">Source Of Funding</div>
+        <div class="label">No of Members</div>
+        <div class="value"><%= application.numberOfMembers%></div>
+        <div class="value"><%= application.sourceOfFunding %></div>
+      </div>
+      <div class="bottom_part">
+        <div
+          style="
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+          "
+        >
+          <div class="label">Date</div>
+          <div class="value"><%=createdAt%></div>
+        </div>
+        <div class="signature_image applicant_signature">
+          <img
+            src="<%=API_URL%>/applicants/<%=applicant.id%>/signature"
+            alt="signature"
+            style="height: 70px"
+          />
+        </div>
+        <div></div>
+        <div class="label signature_label">(Signature of Applicant)</div>
+        <div class="signature_image faculty_signature"></div>
+        <div class="signature_image NVTIL_signature">
+          <img
+            src="<%=API_URL%>/applicants/1/signature"
+            alt="signature"
+            style="height: 70px"
+          />
+        </div>
+        <div class="label signature_label"></div>
+        <div class="label signature_label">(Head of NVTIL)</div>
+      </div>
+    </div>
+  </body>
+</html>

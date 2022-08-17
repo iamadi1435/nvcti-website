@@ -1,0 +1,18 @@
+.pagination-nav .pagination{
+    list-style: none;
+    display:flex;
+    padding-left: 0;
+    justify-content: center;
+}
+
+.pagination-nav .pagination .page-link{
+    cursor: pointer;
+    font-weight: 600;
+    color: #1572e8;
+    text-decoration: none;
+}
+
+.pagination-nav .pagination .page-link.active{
+  color:white;
+  background-color: #1572e8;
+}

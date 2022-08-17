@@ -1,0 +1,64 @@
+#contact.bg-div {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../../assets/background/contact-cover.jpg");
+    /* background-attachment: fixed; */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.side-line{
+    clear: both;
+    display: inline-block;
+    padding: 0 5em!important;
+    position: relative;
+}
+
+#contact.bg-div .main-div{
+    align-items: center;
+}
+
+#contact.bg-div .page-heading{
+    color: black !important;
+}
+
+#contact.bg-div .first-text{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: .3px;
+    margin-bottom: 20px;
+}
+
+#contact.bg-div .second-text{
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: 900;
+}
+
+#contact.bg-div .third-text{
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 2px !important;
+    font-weight: 400 !important;
+}
+
+#contact.bg-div .side-line:after, #contact.bg-div .side-line:before {
+    border-bottom: .1em solid #000;
+}
+
+.side-line:before {
+    left: 0;
+}
+
+.side-line:after {
+    right: 0;
+}
+
+.side-line:after, .side-line:before {
+    border-bottom: .1em solid #1B2B3B;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    width: 4em;
+}

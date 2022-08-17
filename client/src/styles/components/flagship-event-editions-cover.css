@@ -1,0 +1,180 @@
+#flagship-event-editions-cover.bg-div {
+  background: linear-gradient(0deg, rgba(11, 11, 13, 0.394), rgba(11, 11, 13, 0.6)), url("../../assets/background/workshop-building.jpg");
+  background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#flagship-event-editions-cover.bg-div .main-div{
+    align-items: center;
+}
+
+#flagship-event-editions-cover.bg-div .page-heading{
+    color: black !important;
+}
+
+#flagship-event-editions-cover.bg-div .first-text{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: .3px;
+    margin-bottom: 20px;
+}
+
+#flagship-event-editions-cover.bg-div .second-text{
+    text-transform: uppercase;
+    font-size: 52px;
+    line-height: 54px;
+    font-weight: 900;
+    color:white;
+}
+
+#flagship-event-editions-cover.bg-div .third-text{
+    color:white;
+    font-size: 23px;
+    line-height: 22px;
+    letter-spacing: 2px !important;
+    font-weight: 400 !important;
+}
+
+#flagship-event-editions-cover.bg-div .side-line:after, #flagship-event-editions-cover.bg-div .side-line:before {
+    border-bottom: .1em solid #fff;
+}
+
+
+.gallery-page-section {
+  margin:100px 0 0 0;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-attachment: scroll!important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gallery-wrap::before {
+  top: 0;
+}
+.gallery-wrap::after, .gallery-wrap::before {
+  background: #fff;
+  content: "";
+  height: 20px;
+  margin: 0 auto 0 -2px;
+  position: absolute;
+  width: 5px;
+  left: 50%;
+  transition: all .27s cubic-bezier(.3,.1,.58,1) 0s;
+  -webkit-transition: all .27s cubic-bezier(.3,.1,.58,1) 0s;
+  -moz-transition: all .27s cubic-bezier(.3,.1,.58,1) 0s;
+  -o-transition: all .27s cubic-bezier(.3,.1,.58,1) 0s;
+}
+
+.gallery-item{
+  overflow: hidden !important;
+  height:300px !important;
+  margin-bottom: 28px;
+}
+
+.gallery-wrap{
+  height: 100%;
+}
+
+.gallery-image{
+  height:100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.gallery-image:hover{
+  transform: scale(1.1);
+  transition:transform .27s cubic-bezier(.3,.1,.58,1) 0s;
+}
+
+.card2 {
+	 display: flex;
+   align-items:center;
+   justify-content:center;
+	 top: 0px;
+	 position: relative;
+   width: 100%;
+	 background-color: #f2f8f9;
+   text-align: center;
+	 border-radius: 4px;
+	 padding: 40px 30px;
+	 text-decoration: none;
+	 z-index: 0;
+	 overflow: hidden;
+	 border: 1px solid #00848d97;
+}
+ .card2:hover {
+	 transition: all 0.2s ease-out;
+	 box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+	 top: -4px;
+	 border: 1px solid #ccc;
+	 background-color: white;
+}
+ .card2:before {
+	 content: "";
+	 position: absolute;
+	 z-index: -1;
+	 top: -16px;
+	 right: -16px;
+	 background: #00838d;
+	 height: 32px;
+	 width: 32px;
+	 border-radius: 32px;
+	 transform: scale(2);
+	 transform-origin: 50% 50%;
+	 transition: transform 0.15s ease-out;
+}
+
+.card2:hover .small {
+  visibility: visible;
+	transition: all 0.1s ease;
+}
+ .card2:hover:before {
+	 transform: scale(2.15);
+}
+
+.card2 .small {
+    font-size: 14px;
+    visibility: hidden;
+   transition: all 0.1s ease;
+  }
+
+.card2 h3 {
+  color: #262626 !important;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #00838d;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}

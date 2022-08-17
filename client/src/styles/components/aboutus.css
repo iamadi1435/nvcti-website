@@ -1,0 +1,546 @@
+.box-div {
+    background: linear-gradient(0deg, rgba(11, 11, 13, 0.6), rgba(11, 11, 13, 0.6)), url("../../assets/background/aboutus.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.box-div .head {
+    font-family: 'Ubuntu', sans-serif !important;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    float: left;
+    transform: translateY(-50%);
+
+    line-height: 0.1vh;
+    min-height: 100vh;
+    display: flex;
+}
+
+.box-div .head-div-first-text {
+   font-family: 'Ubuntu', sans-serif !important;
+   font-size: 70px;
+   text-transform: uppercase;
+   padding: 0!important;
+}
+
+.box-div .head-div-second-text {
+   font-size: 40px;
+   padding: 0 0 0 0px;
+   font-weight: normal;
+}
+
+.box-div .head-div-third-text {
+    font-family: 'Ubuntu', sans-serif !important;
+    max-width: 500px;
+    font-size: 17px;
+    margin: 15px 0;
+    letter-spacing: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: pre-wrap;
+    padding-left: 15px;
+}
+.box-div .scroll-btn {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.box-div .scroll-btn > *:hover, .box-div .scroll-btn > *:focus, .box-div .scroll-btn > *.active {
+    color: #fff;
+}
+.box-div .scroll-btn > *:hover, .box-div .scroll-btn > *:focus, .box-div .scroll-btn > *:active, .box-div .scroll-btn > *.active {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.box-div .scroll-btn .mouse {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 55px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 23px;
+}
+.box-div .scroll-btn .mouse > * {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: white;
+    border-radius: 50%;
+    -webkit-animation: ani-mouse 2.5s linear infinite;
+    -moz-animation: ani-mouse 2.5s linear infinite;
+    animation: ani-mouse 2.5s linear infinite;
+}
+
+.box-div .scroll-btn.dark .mouse{
+   border: 3px solid #212121 !important;
+}
+
+.box-div .scroll-btn.dark .mouse > * {
+   background: #212121 !important;
+}
+
+
+/* mouse animation */
+
+@-webkit-keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+   }
+    15% {
+        opacity: 1;
+        top: 50%;
+   }
+    50% {
+        opacity: 0;
+        top: 50%;
+   }
+    100% {
+        opacity: 0;
+        top: 29%;
+   }
+}
+@-moz-keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+   }
+    15% {
+        opacity: 1;
+        top: 50%;
+   }
+    50% {
+        opacity: 0;
+        top: 50%;
+   }
+    100% {
+        opacity: 0;
+        top: 29%;
+   }
+}
+@keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+   }
+    15% {
+        opacity: 1;
+        top: 50%;
+   }
+    50% {
+        opacity: 0;
+        top: 50%;
+   }
+    100% {
+        opacity: 0;
+        top: 29%;
+   }
+}
+
+.about-ease-in{
+    padding: 100px 0;
+    color: black;
+    margin: 100px 0 0 0 !important;
+    background: #f2f2f2 !important;
+}
+
+.about-icon{
+    margin-bottom: 6px;
+}
+
+@media only screen and (max-width: 768px){
+    .hover-me-1:after {
+        background-color: transparent !important;
+    }
+}
+
+.hover-me-1:hover{
+    cursor: pointer;
+}
+
+.hover-me-1:after{
+    position: absolute;
+    height: 100px !important;
+    width: 3px !important;
+    right: 0;
+    top: 50%;
+    margin-top: -50px;
+    background-color: #444;
+    visibility: visible !important;
+}
+
+.clearfix:before, .clearfix:after{
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.appear1{
+    opacity: 0;
+    -webkit-transform:translateY(-200%);
+    -moz-transform:translateY(-200%);
+    transform:translateY(-100%);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.disappear1{
+    opacity: 1;
+    transition: all .5s ease-in-out 0s;
+}
+
+.hover-me-1:hover .appear1{
+    opacity: 1;
+    -webkit-transform:translateY(0px);
+    -moz-transform:translateY(0px);
+    transform:translateY(0px);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.disappear2{
+    display: block;
+    opacity: 1;
+    transition-duration: 1.2s;
+
+}
+
+.hover-me-2:hover .disappear2{
+    padding-top: 20px;
+    opacity: 0;
+}
+
+
+
+.disappear3{
+    display: block;
+    opacity: 1;
+    transition-duration: 1.2s;
+
+}
+
+.hover-me-3:hover .disappear3{
+    padding-top: 20px;
+    opacity: 0;
+}
+.styleme,.login-form-section button,.sponsor .btn, .ab-content .btn{
+    color:black;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 0 !important;
+    letter-spacing: 1px;
+    background-color: white;
+    padding:12px 40px;
+    font-weight: 600;
+    border:2px solid black;
+    transition:all .3s ease 0s;
+    width: max-content;
+}
+
+.styleme:hover,.login-form-section button:hover,.sponsor .btn:hover, .ab-content .btn:hover{
+    background-color: black;
+    color:white;
+    border:2px solid white;
+    transition: color .3s ease 0s,background-color .3s ease 0s;
+    -ms-transition: color .3s ease 0s,background-color .3s ease 0s;
+    -webkit-transition: color .3s ease 0s,background-color .3s ease 0s;
+}
+
+.styleme .text-light,.login-form-section button .text-light,.sponsor .btn .text-light{
+  color: #000 !important;
+}
+
+/* flip text */
+
+.flip-card-row{
+    color: black;
+    background: #f2f2f2 !important;
+    height: fit-content;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    cursor: pointer;
+  }
+
+  .flip-card-front{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flip-card-front h1{
+      margin-top: 10px;
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: transparent;
+    color: black;
+  }
+
+  .flip-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+.color-me{
+    background: #f2f2f2;
+    text-align: center;
+    margin-top: 5%;
+    height: 100%;
+    padding: 5% 10px;
+    color:  #000;
+    transition: all 0.5s ease-in 0s;
+}
+
+
+.color-me:hover{
+    cursor: pointer;
+    transform:scale(1.02);
+    box-shadow:10px 10px 10px #888888;
+}
+
+/* Timeline styles */
+#conference-timeline {
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end {
+  display: table;
+  font-family: 'Ubuntu', sans-serif !important;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #222;
+  padding: 15px 23px;
+  color: #fff;
+  max-width: 5%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+#conference-timeline .conference-center-line {
+  position: absolute;
+  width: 3px;
+  height: 60% !important;
+  top: 15% !important;
+  left: 50%;
+  margin-left: -2px;
+  background: #222;
+  z-index: -1;
+}
+#conference-timeline .conference-timeline-content {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+.timeline-article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+  max-width: 44%;
+  width: 100%;
+}
+.timeline-article .timeline-author {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #242424;
+  text-align: right;
+}
+.timeline-article .content-left,
+.timeline-article .content-right {
+  position: relative;
+  width: auto;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.03);
+  padding: 27px 25px;
+}
+.timeline-article p {
+  margin: 0 0 0 60px;
+  padding: 0;
+  font-weight: 400;
+  color: #242424;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 24px;
+  position: relative;
+}
+.timeline-article p span.article-number {
+  position: absolute;
+  font-weight: 300;
+  font-size: 44px;
+  top: 10px;
+  left: -60px;
+  color: #222;
+}
+.timeline-article .content-left-container {
+  float: left;
+}
+.timeline-article .content-right-container {
+  float: right;
+}
+.timeline-article .content-left:before,
+.timeline-article .content-right:before{
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+.timeline-article .content-left:before {
+  content: "\f0da";
+  right: -8px;
+}
+.timeline-article .content-right:before {
+  content: "\f0d9";
+  left: -8px;
+}
+.timeline-article .meta-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -31px;
+  color: #fff;
+  border-radius: 100%;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-article .meta-date .date {
+  font-size: 30px;
+}
+
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (max-width: 830px) {
+  #conference-timeline .timeline-start{
+    margin:0 8px;
+  }
+  #conference-timeline .timeline-end {
+    margin: 0 14px;
+  }
+  #conference-timeline .conference-center-line {
+    margin-left: 0;
+    left: 50px;
+  }
+  .timeline-article .meta-date {
+    margin-left: 0;
+    left: 20px;
+  }
+  .timeline-article .content-left-container,
+  .timeline-article .content-right-container {
+    max-width: 100%;
+    width: max-content;
+    float: none;
+    margin-left: 110px;
+    min-height: 53px;
+  }
+  .timeline-article .content-left-container {
+    margin-bottom: 20px;
+  }
+  .timeline-article .content-left,
+  .timeline-article .content-right {
+    padding: 10px 25px;
+    padding-right: 80px;
+    min-height: 65px;
+  }
+  .timeline-article .content-left:before {
+    content: "\f0d9";
+    right: auto;
+    left: -8px;
+  }
+  .timeline-article .content-right:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .timeline-article p {
+    margin: 0;
+  }
+  .timeline-article p span.article-number {
+    display: none;
+  }
+  .mission-div{
+    justify-content: center !important;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+
+.timeline-article .content-left,
+  .timeline-article .content-right {
+    padding: 10px 25px !important;
+  }
+
+}
+

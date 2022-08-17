@@ -1,0 +1,35 @@
+.confirmation_page {
+  width: 100%;
+  height: 100vh;
+}
+.confirmation_page .confirmation_body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.confirmation_page .confirmation_body div {
+  text-align: center;
+}
+.confirmation_page .confirmation_body button {
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 0 !important;
+  letter-spacing: 1px;
+  background-color: white;
+  padding: 12px 40px;
+  font-weight: 600;
+  border: 2px solid black;
+  transition: all 0.3s ease 0s;
+  width: max-content;
+}
+.confirmation_page .confirmation_body button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
+  -ms-transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
+  -webkit-transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
+}

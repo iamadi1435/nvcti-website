@@ -1,0 +1,64 @@
+.slider {
+  flex-direction: column;
+}
+
+.slider h2{
+  font-weight: bold;
+}
+
+.slider .owl-nav button.owl-prev {
+  justify-content: flex-end;
+  left: -40px;
+}
+
+.slider .owl-nav button.owl-next {
+  justify-content: flex-start;
+  right: -40px;
+}
+
+.slider .owl-nav button.owl-prev:hover, .slider .owl-nav button.owl-next:hover{
+    background-color: rgba(0,0,0,0.7) !important;
+    transition: all 0.3s ease-in;
+}
+
+.slider .owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.slider .owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 0 !important;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.slider .owl-dots button.owl-dot.active {
+  background-color: #212121;
+}
+.slider .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.slider .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #212121 !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  height: 50px;
+  width: 60px;
+  display: flex !important;
+  align-items: center;
+  font-size: medium;
+  margin: 0;
+  transition: all 0.3s ease-in;
+}
+
+.slider .owl-nav button:focus {
+    outline: none;
+}
+
+.slider .owl-carousel .owl-nav button.owl-prev,.slider .owl-carousel .owl-nav button.owl-next,.slider .owl-carousel button.owl-dot{
+    padding: 12px !important;
+}

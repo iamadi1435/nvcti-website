@@ -1,0 +1,10 @@
+#contact .text-about{
+    display: flex;
+    flex-direction: row;
+}
+
+#contact .text-about .ab-icon{
+    font-size: 55px;
+    line-height: 60px;
+    margin-right: 20px;
+}

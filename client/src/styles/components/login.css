@@ -1,0 +1,72 @@
+.cover{
+    width:75vw;
+    height:75vh;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 7px rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: row;
+    margin-top:130px;
+}
+
+.cover .row{
+    height: 100%;
+}
+
+.cover .left-side{
+    background:linear-gradient(0deg, rgba(59, 59, 59, 0.748), rgba(0, 0, 0, 0.714)),url(../../assets/background/login-bg.jpg);
+    border-radius: 5px 0 0 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.cover .right-side{
+    /* background:linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),url(../../assets/background/login-bg-2.jpg); */
+    border-radius: 5px 0 0 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.left-side .welcome-text{
+    text-align: center;
+}
+
+.left-side .welcome-text h2,.login-form-section h2{
+    font-weight: 600;
+}
+
+.left-side .welcome-text p{
+    font-size: 20px;
+}
+
+.login-form-section{
+    height: 50%;
+    padding:0 10px;
+    width:fit-content;
+    flex-direction: column;
+}
+
+.cover .login-form-section .row{
+    height: fit-content !important;
+}
+
+.login-form-section .input-group-text,.login-form-section .form-control{
+    border-radius: 0;
+}
+
+.login-form-section .input-group{
+    width: 270px !important;
+}
+
+.login-form-section button{
+    padding: 5px 30px !important;
+}
+
+.login-form-section .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color:rgba(21,21,21,.25)!important;
+    box-shadow: 0 0 0 0.2rem rgba(21,21,21,.25)!important;
+}

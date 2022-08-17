@@ -1,0 +1,231 @@
+@media only screen and (max-width:700px){
+  .main-div{
+    padding:30px;
+  }
+  .cover .left-side {
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width:988px) {
+  .logoutNav{
+    justify-content: center !important;
+  }
+
+  .logoutNav .navbar-nav{
+    margin-right: 0 !important;
+    align-items: center !important;
+  }
+  .logoutNav .navbar-nav button {
+    margin-top: 3px !important;
+  }
+
+  .admin-nav .admin_header .navbar-nav .react-reveal {
+    align-items: center !important;
+  }
+}
+
+@media only screen and (max-width:901px) {
+  #contact-info {
+    width: 100vw !important;
+  }
+}
+
+@media only screen and (max-width:1220px){
+
+  .header-nav .navbar-nav .dropdown.nav-item{
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+
+  .header-nav .navbar-nav{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .header-nav .navbar-nav .dropdown-menu .react-reveal{
+    align-items: center !important;
+  }
+
+  .transparent.navbar-light .navbar-toggler {
+    color: white !important;
+    padding: 0 .75rem !important;
+    border-color: transparent !important;
+  }
+
+  .light.navbar-light .navbar-toggler{
+    border-color: transparent !important;
+  }
+
+  .transparent.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+
+  .light.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  }
+
+}
+
+.spacing{
+  width:100%;
+}
+
+
+@media only screen and (max-width:770px){
+
+  .announcement-list{
+    height: 200px !important;
+  }
+
+  .login-main-div .cover {
+    width: 95vw;
+    height: fit-content;
+  }
+
+  .login-form-section h2{
+    margin-top: 15px !important;
+  }
+
+  .profile-nav .brand-name{
+    margin-left: 0rem !important;
+  }
+
+  .main-div{
+    padding: 70px 10px !important;
+  }
+
+  .head-div-first-text{
+    font-size: 60px !important;
+    margin-left: 7px;
+  }
+
+  .box-div .head-div-first-text{
+    margin-left: unset !important;
+  }
+
+}
+
+@media only screen and (max-width: 430px){
+
+  #loading p{
+    font-size: 12px !important;
+  }
+
+  .slider .owl-nav button.owl-prev {
+    left: -10px !important;
+  }
+
+  .slider .owl-nav button.owl-next {
+    right: -10px !important;
+  }
+
+  .admin-main .idea_card{
+    width: 100vw !important;
+  }
+
+  .notfound .notfound-404 h1 {
+    font-size: 150px !important;
+  }
+
+  .notfound .notfound-404 .far {
+    font-size: 120px !important;
+  }
+
+  #contact .text-about{
+    width:350px !important;
+    justify-content: center;
+  }
+
+  .bg-div .head-div-first-text{
+    font-size: 50px;
+  }
+
+  .card-container .left-side{
+    padding-right: 0 !important;
+  }
+
+  .card-container .right-side{
+    padding:15px !important;
+  }
+
+  .card-container .right-side .card-button{
+    text-align: center !important;
+  }
+
+  .main-div{
+    padding:70px 0 !important;
+  }
+
+  .facilities__tabs .facilities__tabs-list{
+    margin-bottom: 100px;
+  }
+  .bg-div .head-div-second-text{
+    font-size: 30px;
+  }
+  .profile-nav .navbar-text{
+    margin-left: 10px;
+  }
+
+  .profile-info .card-title, .profile-table .card-title{
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .profile-title .title-heading .heading-text-wrapper,.profile-title .title-actions{
+    justify-content: center;
+    flex-direction: column !important;
+  }
+
+  .profile-title .title-heading .heading-text-wrapper .heading-text-2{
+    margin:10px;
+    text-align: center;
+  }
+
+  .cover .left-side{
+    padding: 50px;
+    height: max-content !important;
+    border-radius: 5px 5px 0 0 !important;
+  }
+
+  .cover .right-side{
+    border-radius: 0 0 5px 5px !important;
+  }
+
+  .login-main-div .cover .container{
+    height: 120%;
+  }
+
+  .login-main-div .cover .login-hr{
+    margin-top:13px !important;
+  }
+
+  .header-nav .brand-name{
+    margin-left: 5px !important;
+  }
+
+  .bg-div .head-div-third-text{
+    letter-spacing: 2px;
+  }
+
+  .sponsor .container .second-row{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .left,.footer .right{
+    width: 100% !important;
+  }
+
+  .footer .right{
+    margin-left: 0 !important;
+  }
+
+  .footer h2, .footer h3, .footer .social-links{
+    text-align: center;
+  }
+
+  .footer .bottom-div{
+    margin-top: 20px !important;
+  }
+}

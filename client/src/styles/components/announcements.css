@@ -1,0 +1,9 @@
+.marquee {
+    position: relative;
+    animation: marquee 8s linear infinite;
+}
+
+@keyframes marquee {
+    0%   { top:   3em }
+    100% { top: -8em }
+}

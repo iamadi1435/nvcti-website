@@ -1,0 +1,17 @@
+[Unit]
+Description=NVCTI Server
+
+[Service]
+# Use the address where you kept the code for the app
+ExecStart=/var/www/html/iitism/nvcti/server.sh
+Restart=always
+User=nobody
+# Confirm this group once, it should be nobody for centos, though
+Group=nogroup
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+# Edit this with where you kept the code for the app
+WorkingDirectory=/var/www/html/nvcti
+
+[Install]
+WantedBy=multi-user.target

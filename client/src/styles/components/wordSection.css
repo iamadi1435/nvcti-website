@@ -1,0 +1,23 @@
+.word-section {
+  margin: 100px 0 0 0;
+  padding: 0;
+}
+
+.word-section .heading {
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.word-section .word-image {
+  width: 100%;
+  height: auto;
+  margin-top: -65px;
+}
+
+@media screen and (max-width: 1200px) {
+  .word-section .word-image {
+    margin-top: 0;
+  }
+}

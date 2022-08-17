@@ -1,0 +1,161 @@
+.bg-div {
+	 background: linear-gradient(0deg, rgba(11, 11, 13, 0.6), rgba(11, 11, 13, 0.6)), url("../../assets/background/academic-complex-skyline.jpg");
+	 background-attachment: fixed;
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 width: 100%;
+	 height: 100vh;
+}
+ .bg-div .head {
+	 font-family: 'Ubuntu', sans-serif !important;
+	 color: white;
+	 position: absolute;
+	 top: 50%;
+	 left: 0px;
+	 right: 0px;
+	 transform: translateY(-50%);
+	 z-index: 1;
+	 line-height: 0.1vh;
+	 min-height: 100vh;
+	 display: flex;
+}
+
+ .bg-div .head-div-first-text, .bg-div .head-div-first-text span {
+  font-family: 'Ubuntu', sans-serif !important;
+	font-size: 70px;
+	text-transform: uppercase;
+  padding: 0!important;
+}
+
+.bg-div .head-div-second-text {
+   font-family: 'Ubuntu', sans-serif !important;
+	font-size: 50px;
+	padding: 0 0 0 11px;
+	font-weight: normal;
+}
+
+ .bg-div .head-div-third-text {
+   font-family: 'Ubuntu', sans-serif !important;
+	 max-width: 500px;
+	 font-size: 17px;
+	 margin: 15px 0;
+	 letter-spacing: 10px;
+	 font-weight: 600;
+	 text-transform: uppercase;
+	 white-space: pre-wrap;
+	 padding-left: 15px;
+}
+ .bg-div .scroll-btn {
+	 display: block;
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 text-align: center;
+}
+ .bg-div .scroll-btn > *:hover, .bg-div .scroll-btn > *:focus, .bg-div .scroll-btn > *.active {
+	 color: #fff;
+}
+ .bg-div .scroll-btn > *:hover, .bg-div .scroll-btn > *:focus, .bg-div .scroll-btn > *:active, .bg-div .scroll-btn > *.active {
+	 opacity: 0.8;
+	 filter: alpha(opacity=80);
+}
+ .bg-div .scroll-btn .mouse {
+	 position: relative;
+	 display: block;
+	 width: 35px;
+	 height: 55px;
+	 margin: 0 auto 20px;
+	 -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	 box-sizing: border-box;
+	 border: 3px solid white;
+	 border-radius: 23px;
+}
+ .bg-div .scroll-btn .mouse > * {
+	 position: absolute;
+	 display: block;
+	 top: 29%;
+	 left: 50%;
+	 width: 8px;
+	 height: 8px;
+	 margin: -4px 0 0 -4px;
+	 background: white;
+	 border-radius: 50%;
+	 -webkit-animation: ani-mouse 2.5s linear infinite;
+	 -moz-animation: ani-mouse 2.5s linear infinite;
+	 animation: ani-mouse 2.5s linear infinite;
+}
+
+.bg-div .scroll-btn.dark .mouse{
+	border: 3px solid #212121 !important;
+}
+
+.bg-div .scroll-btn.dark .mouse > * {
+	background: #212121 !important;
+}
+
+.announcement-list{
+	display: flex;
+	height: 295px;
+	padding-right: 30px;
+	overflow: auto;
+}
+
+/* mouse animation */
+
+ @-webkit-keyframes ani-mouse {
+	 0% {
+		 opacity: 1;
+		 top: 29%;
+	}
+	 15% {
+		 opacity: 1;
+		 top: 50%;
+	}
+	 50% {
+		 opacity: 0;
+		 top: 50%;
+	}
+	 100% {
+		 opacity: 0;
+		 top: 29%;
+	}
+}
+ @-moz-keyframes ani-mouse {
+	 0% {
+		 opacity: 1;
+		 top: 29%;
+	}
+	 15% {
+		 opacity: 1;
+		 top: 50%;
+	}
+	 50% {
+		 opacity: 0;
+		 top: 50%;
+	}
+	 100% {
+		 opacity: 0;
+		 top: 29%;
+	}
+}
+ @keyframes ani-mouse {
+	 0% {
+		 opacity: 1;
+		 top: 29%;
+	}
+	 15% {
+		 opacity: 1;
+		 top: 50%;
+	}
+	 50% {
+		 opacity: 0;
+		 top: 50%;
+	}
+	 100% {
+		 opacity: 0;
+		 top: 29%;
+	}
+}
